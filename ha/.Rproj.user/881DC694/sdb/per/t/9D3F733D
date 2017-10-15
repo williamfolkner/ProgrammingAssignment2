@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "## Put comments here that give an overall description of what your\n## functions do\n\n## Write a short comment describing this function\n\nmakeCacheMatrix <- function(x = matrix()) {\n\n}\n\n\n## Write a short comment describing this function\n\ncacheSolve <- function(x, ...) {\n        ## Return a matrix that is the inverse of 'x'\n}\n",
+    "created" : 1508074494457.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2321181709",
+    "id" : "9D3F733D",
+    "lastKnownWriteTime" : 1508074189,
+    "last_content_update" : 1508074189,
+    "path" : "C:/Users/Георгий/git/ProgrammingAssignment2/cachematrix.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

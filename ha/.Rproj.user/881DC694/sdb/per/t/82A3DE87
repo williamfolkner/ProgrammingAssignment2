@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "## Put comments here that give an overall description of what your\n## functions do\n\n## Write a short comment describing this function\n\nmakeCacheMatrix <- function(x = matrix()) {\n  \n  m <- NULL\n  \n  set <- function(y) {\n    x <<- y\n    m <<- NULL\n  }\n  \n  get <- function() x\n  \n  setinverse <- function(solve) m <<- solve\n  \n  getinverse <- function() m\n  \n  list(set = set, get = get,\n       setmean = setinverse,\n       getmean = getinverse)\n  \n}\n\n\n## Write a short comment describing this function\n\ncacheSolve <- function(x, ...) {\n  ## Return a matrix that is the inverse of 'x'\n  m <- x$getinverse()\n  if(!is.null(m)) {\n    message(\"getting cached data\")\n    return(m)\n  }\n  data <- x$get()\n  m <- solve(data, ...)\n  x$setinverse(m)\n  m\n}\n\nx <- makeCacheMatrix(matrix(c(2, 4, 3, 1, 5, 7), nrow=3, ncol=2)\n     \n\n\n\n",
+    "created" : 1508074490819.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2941323658",
+    "id" : "82A3DE87",
+    "lastKnownWriteTime" : 1508075741,
+    "last_content_update" : 1508075741640,
+    "path" : "C:/Users/Георгий/git/ha/ha.Rproj",
+    "project_path" : "ha.Rproj",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}
